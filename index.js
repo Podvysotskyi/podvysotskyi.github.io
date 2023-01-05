@@ -98,7 +98,7 @@ var pug_match_html=/["&<>]/;function template(locals) {var pug_html = "", pug_mi
     var locals_for_with = (locals || {});
     
     (function (self) {
-      pug_html = pug_html + "\u003Cdiv" + (" class=\"block\""+pug_attr("id", `${self.id}-sprite`, false, true)) + "\u003E\u003Cdiv" + (" class=\"title\""+pug_attr("onclick", `document.dispatchEvent(new Event('${self.id}-sprite-display'))`, true, true)) + "\u003E\u003Cb\u003Esprite\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Ctable\u003E\u003Ctr\u003E\u003Ctd\u003Eposition\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-position-0`, false, true)+" type=\"number\""+pug_attr("value", self.position[0], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-position'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-position-1`, false, true)+" type=\"number\""+pug_attr("value", self.position[1], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-position'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-position-2`, false, true)+" type=\"number\""+pug_attr("value", self.position[2], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-position'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003Ctr\u003E\u003Ctd\u003Escale\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-scale-0`, false, true)+" type=\"number\""+pug_attr("value", self.scale[0], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-scale'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-scale-1`, false, true)+" type=\"number\""+pug_attr("value", self.scale[1], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-scale'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-scale-2`, false, true)+" type=\"number\""+pug_attr("value", self.scale[2], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-scale'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003C\u002Ftable\u003E" + (null == (pug_interp = self.program.toHTML()) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E";
+      pug_html = pug_html + "\u003Cdiv" + (" class=\"block\""+pug_attr("id", `${self.id}-sprite`, false, true)) + "\u003E\u003Cdiv" + (" class=\"title\""+pug_attr("onclick", `document.dispatchEvent(new Event('${self.id}-sprite-display'))`, true, true)) + "\u003E\u003Cb\u003Esprite\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Ctable\u003E\u003Ctr\u003E\u003Ctd\u003Eposition\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-position-0`, false, true)+" type=\"number\""+pug_attr("value", self.position[0], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-position'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-position-1`, false, true)+" type=\"number\""+pug_attr("value", self.position[1], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-position'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-position-2`, false, true)+" type=\"number\""+pug_attr("value", self.position[2], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-position'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003Ctr\u003E\u003Ctd\u003Escale\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-scale-0`, false, true)+" type=\"number\""+pug_attr("value", self.scale[0], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-scale'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-scale-1`, false, true)+" type=\"number\""+pug_attr("value", self.scale[1], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-scale'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (pug_attr("id", `${self.id}-scale-2`, false, true)+" type=\"number\""+pug_attr("value", self.scale[2], false, true)+pug_attr("onchange", `document.dispatchEvent(new Event('${self.id}-scale'))`, false, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003C\u002Ftable\u003E" + (null == (pug_interp = self.program.toHTML()) ? "" : pug_interp) + (null == (pug_interp = self.texture.toHTML()) ? "" : pug_interp) + "\u003C\u002Fdiv\u003E";
     }.call(this, "self" in locals_for_with ?
         locals_for_with.self :
         typeof self !== 'undefined' ? self : undefined));
@@ -180,6 +180,26 @@ function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;
         typeof self !== 'undefined' ? self : undefined, "type" in locals_for_with ?
         locals_for_with.type :
         typeof type !== 'undefined' ? type : undefined));
+    ;;return pug_html;};module.exports=template;
+
+/***/ }),
+
+/***/ "./src/engine/render/texture/texture.pug":
+/*!***********************************************!*\
+  !*** ./src/engine/render/texture/texture.pug ***!
+  \***********************************************/
+/***/ ((module) => {
+
+function pug_attr(t,e,n,r){if(!1===e||null==e||!e&&("class"===t||"style"===t))return"";if(!0===e)return" "+(r?t:t+'="'+t+'"');var f=typeof e;return"object"!==f&&"function"!==f||"function"!=typeof e.toJSON||(e=e.toJSON()),"string"==typeof e||(e=JSON.stringify(e),n||-1===e.indexOf('"'))?(n&&(e=pug_escape(e))," "+t+'="'+e+'"'):" "+t+"='"+e.replace(/'/g,"&#39;")+"'"}
+function pug_escape(e){var a=""+e,t=pug_match_html.exec(a);if(!t)return e;var r,c,n,s="";for(r=t.index,c=0;r<a.length;r++){switch(a.charCodeAt(r)){case 34:n="&quot;";break;case 38:n="&amp;";break;case 60:n="&lt;";break;case 62:n="&gt;";break;default:continue}c!==r&&(s+=a.substring(c,r)),c=r+1,s+=n}return c!==r?s+a.substring(c,r):s}
+var pug_match_html=/["&<>]/;function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;;
+    var locals_for_with = (locals || {});
+    
+    (function (self) {
+      pug_html = pug_html + "\u003Cdiv class=\"block\"\u003E\u003Cdiv class=\"title\"\u003E\u003Cb\u003Etexture\u003C\u002Fb\u003E\u003C\u002Fdiv\u003E\u003Ctable\u003E\u003Ctr\u003E\u003Ctd\u003Elevel\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (" type=\"text\""+pug_attr("readonly", true, true, true)+pug_attr("value", self.level, true, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003Ctr\u003E\u003Ctd\u003EinternalFormat\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (" type=\"text\""+pug_attr("readonly", true, true, true)+pug_attr("value", self.internalFormat, true, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003Ctr\u003E\u003Ctd\u003EsrcFormat\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (" type=\"text\""+pug_attr("readonly", true, true, true)+pug_attr("value", self.srcFormat, true, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003Ctr\u003E\u003Ctd\u003EsrcType\u003C\u002Ftd\u003E\u003Ctd\u003E\u003Cinput" + (" type=\"text\""+pug_attr("readonly", true, true, true)+pug_attr("value", self.srcType, true, true)) + "\u003E\u003C\u002Ftd\u003E\u003C\u002Ftr\u003E\u003C\u002Ftable\u003E\u003C\u002Fdiv\u003E";
+    }.call(this, "self" in locals_for_with ?
+        locals_for_with.self :
+        typeof self !== 'undefined' ? self : undefined));
     ;;return pug_html;};module.exports=template;
 
 /***/ }),
@@ -3965,6 +3985,9 @@ var Texture = /** @class */ (function () {
     Texture.prototype.bind = function () {
         this.gl.activeTexture(this.gl.TEXTURE0);
         this.gl.bindTexture(this.gl.TEXTURE_2D, this.texture);
+    };
+    Texture.prototype.toHTML = function () {
+        return __webpack_require__(/*! ./texture.pug */ "./src/engine/render/texture/texture.pug")({ self: this });
     };
     return Texture;
 }());
