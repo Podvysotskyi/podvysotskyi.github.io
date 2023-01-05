@@ -1,0 +1,108 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+canvas#game{
+    margin-right: 5px;
+    width: calc(50% - 15px);
+    height: calc(100% - 20px);
+}
+
+div#manager {
+    margin-left: 5px;
+    width: calc(50% - 15px);
+    height: calc(100% - 20px);
+    overflow-y: scroll;
+}
+
+div#manager > h3 {
+    margin: 0;
+}
+
+.block {
+    width: calc(100% - 4px);
+    margin: 2px 1px -1px 1px;
+    border: 1px solid black;
+}
+
+.block.hide {
+    margin: 2px 1px 1px 1px;
+}
+
+.block.hide > :not(.title) {
+    display: none;
+}
+
+.block:not(:has(.block:hover)):hover {
+    background-color: lightcyan;
+}
+
+.block > .title {
+    margin: 2px;
+}
+
+.block[id] > .title {
+    cursor: pointer;
+}
+
+.block > .title > button {
+    margin-right: 4px;
+}
+
+.block > .title > span,
+.block > table th > span {
+    margin-right: 4px;
+    padding: 0 5px;
+    background: lightblue;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+.block > .title > .id {
+    float: right;
+    background: lightgray;
+    margin: 0;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+.block > .title:has(button) > .id {
+    margin: 2px 0 0 0;
+}
+
+.block > table {
+    margin: 0 -1px -1px -1px;
+    width: calc(100% + 2px);
+    border: 1px solid black;
+}
+
+.block > table th {
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+}
+
+.block > .flex {
+    width: calc(100% - 2px);
+    display: inline-flex;
+    flex-flow: row wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0 -1px -1px -1px;
+    padding: 1px 2px;
+}
+
+.block > .flex > div {
+    flex: 1;
+}
+
+pre {
+    margin: 0;
+    padding: 1px;
+}
